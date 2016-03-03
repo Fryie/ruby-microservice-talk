@@ -4,6 +4,7 @@
  * By Hakim El Hattab, http://hakim.se
  */
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700);
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #fff; }
 
@@ -15,8 +16,8 @@ body {
   background-color: #dcdddd; }
 
 .reveal {
-  font-family: Baskerville;
-  font-size: 38px;
+  font-family: "Libre Baskerville", serif;
+  font-size: 36px;
   font-weight: normal;
   color: #615e59; }
 
@@ -41,7 +42,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #615e59;
-  font-family: Baskerville;
+  font-family: "Libre Baskerville", serif;
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: normal;
@@ -298,8 +299,7 @@ body {
 
 .reveal section a, .reveal section pre, .reveal section code {
   padding: 2px;
-  font-family: 'Source Code Pro';
-  font-size: 0.8em; }
+  font-family: 'Source Code Pro'; }
 
 .reveal section blockquote ol {
   display: block; }

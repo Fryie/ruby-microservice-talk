@@ -12,6 +12,7 @@
 
 // Include theme-specific fonts
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700);
 
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #dcdddd;
@@ -19,9 +20,9 @@ $backgroundColor: #dcdddd;
 $mainColor: #615e59;
 $headingColor: #615e59;
 
-$mainFontSize: 38px;
-$mainFont: Baskerville;
-$headingFont: Baskerville;
+$mainFontSize: 36px;
+$mainFont: 'Libre Baskerville', serif;
+$headingFont: $mainFont;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
@@ -63,7 +64,6 @@ section.has-dark-background {
   a, pre, code {
     padding: 2px;
     font-family: 'Source Code Pro';
-    font-size: 0.8em;
   }
 
   blockquote {
