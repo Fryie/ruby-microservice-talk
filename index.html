@@ -189,47 +189,6 @@ end</code></pre>
         </section>
 
         <section>
-          <h3>Project structure</h3>
-          <pre><code>.
-├── Gemfile
-├── Gemfile.lock
-├── Procfile
-├── README.md
-├── bin
-│   └── mailer
-├── config
-│   ├── deploy.rb
-│   ├── settings.yml
-│   └── setup.rb
-├── examples
-│   └── mail.rb
-├── lib
-│   ├── mailer.rb
-│   └── mandrill_api/...
-└── spec
-    ├── acceptance/...
-    ├── acceptance_helper.rb
-    ├── lib/...
-    └── spec_helper.rb</code></pre>
-        </section>
-
-        <section>
-          <h3>setup.rb</h3>
-          <pre><code>require 'bundler/setup'
-lib_path = File.expand_path '../../lib', __FILE__
-$LOAD_PATH.unshift lib_path
-
-ENV = ENV['ENVIRONMENT'] || 'development'
-
-require 'yaml'
-yaml_file = File.expand_path '../settings.yml', __FILE__
-SETTINGS = YAML.load_file(yaml_file)[ENV]
-
-require 'byebug' if %w(development test).include?(ENV)
-</code></pre>
-        </section>
-
-        <section>
           <h3>bin/mailer</h3>
           <pre><code>#!/usr/bin/env ruby
 require_relative '../config/setup'
@@ -323,11 +282,19 @@ RECEIVED: {"from":"support@company.com",...}
         </section>
 
         <section>
+          <h2>Conclusion</h2>
+          <p>It's easier than you'd think.</p>
+          <p>Spend the time to get to know the tools.</p>
+          <p>Profit.</p>
+        </section>
+
+        <section>
           <h1>Thank you!</h1>
           <a href="https://twitter.com/Tainnor">@Tainnor</a><br>
           <a href="https://github.com/Fryie">https://github.com/Fryie</a><br>
           <a href="http://coderascal.com/">http://coderascal.com/</a>
         </section>
+
 			</div>
 
 		</div>
